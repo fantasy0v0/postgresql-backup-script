@@ -11,6 +11,18 @@
 └─wal
 ```
 
+## 初始化
+
+```bash
+set -e
+mkdir -p /pg_backup/base
+mkdir -p /pg_backup/conf
+mkdir -p /pg_backup/script
+mkdir -p /pg_backup/wal
+chown -R postgres:postgres /pg_backup
+chmod -R 0700 /pg_backup
+```
+
 ## base
 
 用于存放pg_basebackup产生的目录以及文件
