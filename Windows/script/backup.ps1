@@ -35,7 +35,7 @@ if (! $?)
 }
 
 # 备份配置文件
-Compress-Archive -LiteralPath "$($DataPath)\postgresql.conf", "$($DataPath)\pg_hba.conf" -DestinationPath "$($Directory)\conf.$(Get-Date -Format "yyyyMMdd").zip"
+Compress-Archive -LiteralPath "$($DataPath)\postgresql.conf", "$($DataPath)\pg_hba.conf" -DestinationPath "$($Directory)\conf.zip"
 
 # 清理过期base
 $CutoffDate = (Get-Date).AddDays(-15)
