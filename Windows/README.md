@@ -5,7 +5,6 @@
 ```
 D:\pg_backup
 ├─base
-├─conf
 ├─script
 │  └─backup.ps1
 └─wal
@@ -13,11 +12,7 @@ D:\pg_backup
 
 ## base
 
-用于存放pg_basebackup产生的目录以及文件
-
-## conf
-
-用于存放数据库配置文件的备份, 使用zip压缩和打包
+用于存放pg_basebackup产生的目录、文件以及配置文件
 
 ## script
 

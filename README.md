@@ -5,7 +5,7 @@ PostgreSQL Point-in-Time Recovery (PITR)
 
 # Point-in-Time Recovery (PITR)
 
-> https://www.postgresql.org/docs/15/continuous-archiving.html
+> https://www.postgresql.org/docs/current/continuous-archiving.html
 
 利用每周一次的basebackup，和期间备份的wal文件，可以让数据库恢复到任意时间点。
 
