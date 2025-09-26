@@ -13,7 +13,7 @@ if [ $? -eq 1 ]; then
 	exit 2
 fi
 # 备份配置文件
-tar -zcvf "$directory/conf.tar.gz" --directory=/etc/postgresql/ .
+tar -zcvf "$directory/conf.tar.gz" --directory=/etc/postgresql/ *
 
 # 清理过期basebackup
 find $base/base/ -mindepth 1 -maxdepth 1 -type d -mtime +15 -printf "%P\0" | xargs -0 -I {} rm -rfv $base/base/{}
