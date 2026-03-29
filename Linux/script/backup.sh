@@ -8,7 +8,7 @@ if [ -d $directory ]; then
 fi
 # 执行base_backup
 pg_basebackup -D $directory -F t -z -U postgres
-if [ $? -eq 1 ]; then
+if [ $? -ne 0 ]; then
 	echo "basebackup failed"
 	exit 2
 fi
